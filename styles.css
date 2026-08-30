@@ -1,0 +1,103 @@
+/* styles.css - Challenge #2 (Skeleton: Rides Gallery) */
+
+
+/* 0) Base page */
+
+
+.body {
+  background-color: white;
+}
+
+
+/* 1) Container */
+
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  max-width: 900px;
+  background-color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.site-header {
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+/* 2) Section heading */
+
+.attractions {
+  text-align: center;
+}
+
+/* 3) Cards wrapper (center all cards horizontally) */
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid grey;
+}
+
+
+/* 6) Card image (fit within card, centered) */
+.card img {
+  width: 200px;
+  height:150px;
+  border-radius: 10px;
+}
+
+/* 4) Card (size, spacing, border, rounded corners) */
+.card {
+  width: 200px;
+  background-color: white;
+  margin: 15px;
+  border: 3px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 0 10px grey;
+}
+
+/* 5) Card text (h3 title, paragraph blurb) */
+.card h3 {
+  text-align: left;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  padding: 3px;
+}
+
+.blurb {
+  text-align: left;
+  margin-top: 5px;
+  color: grey;
+  padding: 3px;
+}
+
+/* 7) Hover state: change border to green, then make it wigglew */
+
+@keyframes wiggle{
+
+0% { transform: rotate(0deg); }
+25% { transform: rotate(3deg) ; }
+50% { transform: rotate(-3deg); }
+75% { transform: rotate (2deg); }
+100% { transform: rotate(0deg); }
+}
+.card:hover{
+  border-color: red;
+  animation: wiggle 0.4s ease;
+}
+
+/* 8) Footer */
+
+.site-footer {
+  color: grey;
+  text-align: center;
+  padding-bottom: 10px;
+}
