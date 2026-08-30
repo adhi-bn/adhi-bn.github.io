@@ -185,7 +185,10 @@
   box-shadow: 0 0 5px grey;
 }
 
-
+.back-to-top:hover{
+  transform: translateY(-10px);
+  background-color: darkblue;
+}
 
 /* 9) Footer (muted, centered) */
 
